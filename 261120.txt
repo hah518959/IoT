@@ -1,0 +1,56 @@
+header
+command
+Data
+length
+crc16
+tail
+
+
+1979년 Modicon에서 개발한 산업용 통신 프로토콜
+구조단순, 구현 쉬움, 산업 현장에서 가장 많이 사용
+Master: PLC, PC, Embeded Device
+
+Slave: Edge Device, Sensor, Inverter
+
+마스터는 가져오라 시키고, 슬레이브는 값을 줌
+
+
+
+RTU <-우리가 쓸거
+
+TCP <- wifi같은거 <==여기에는 CRC 쓸 필요가 없음
+
+Modbus RTU(Master) <- UART RS232, RS485
+-Slave ID
+-Function Code
+-Address
+-Count
+-CRC
+
+Modbus RTU(Slave)
+-Slave ID
+-Function Code
+-Byte Count
+-Register Value
+-...
+-CRC
+
+RS232 => 왔다갔다?
+
+RS485 =>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
